@@ -1,0 +1,26 @@
+﻿@model WebService.Models.ConsultaEnd
+
+    <center><h2>Consulta Endereco</h2></center>
+
+    
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ConsultaEnd">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Cep" class="control-label"></label>
+                    <input asp-for="Cep" class="form-control" />
+                    <span asp-validation-for="Cep" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Consultar e Cadastrar" class="btn btn-success" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Voltar</a><br><br>
+
+    </div>
